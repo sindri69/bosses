@@ -1,0 +1,1 @@
+export const CREATE_BOSS = 'CREATE_BOSS';

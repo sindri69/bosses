@@ -6,12 +6,12 @@ const NavLinks = props => {
     const { Home, Bosses } = props;
     return (
         <ul className="navbar-nav mr-auto">
-            <li className="nav-item">
+            <button className="btn btn-primary"> Home 
                 <NavLink exact to="/" className="nav-link">{ Home }</NavLink>
-            </li>
-            <li className="nav-item">
+            </button>
+            <button className="btn btn-danger"> Bosses
                 <NavLink to="/bosses" className="nav-link">{ Bosses }</NavLink>
-            </li>
+            </button>
         </ul>
     );
 };

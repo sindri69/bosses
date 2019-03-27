@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const About = () => {
+const Home = () => {
   
     return (
         <div>
@@ -11,10 +11,25 @@ const About = () => {
     )
 };
 
+
 const mapStateToProps = reduxStoreState => {
     return {
       //translations: reduxStoreState.language.navigationLinks
     };
   };
   
-export default connect(mapStateToProps)(About);
+  export default connect(mapStateToProps)(Home);
+
+/*
+class Home extends React.Component {
+
+    render() {
+        return (
+            <div>
+               looool
+            </div>
+        )
+    };
+};
+
+export default Home;*/
