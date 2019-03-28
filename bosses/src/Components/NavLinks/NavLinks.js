@@ -7,10 +7,10 @@ const NavLinks = props => {
     return (
         <ul className="navbar-nav mr-auto">
             <button className="btn btn-primary"> Home 
-                <NavLink exact to="/" className="nav-link">{ Home }</NavLink>
+                <NavLink to="/" className="nav-link">{ Home } </NavLink>
             </button>
             <button className="btn btn-danger"> Bosses
-                <NavLink to="/bosses" className="nav-link">{ Bosses }</NavLink>
+                <NavLink to="/bosses" className="nav-link">{ Bosses } </NavLink>
             </button>
         </ul>
     );

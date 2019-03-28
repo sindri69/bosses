@@ -7,3 +7,13 @@ export const createBoss = newBoss => {
     payload: newBoss
   };
 };
+
+export const UPDATE_BOSS = boss => {
+  console.log(boss);
+  return {
+    type: UPDATE_BOSS,
+    payload: boss
+  };
+};
+
+export const 

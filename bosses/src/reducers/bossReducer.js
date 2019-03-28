@@ -7,7 +7,8 @@ const initialState = {
         img: ''
   };
   
-  export default function(state = initialState, action) {
+  
+  export default function bossreducer(state = initialState, action) {
     switch (action.type) {
       case CREATE_BOSS:
         console.log(action);
