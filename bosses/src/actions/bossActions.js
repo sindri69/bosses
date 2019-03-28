@@ -1,5 +1,6 @@
 import { CREATE_BOSS, GET_BOSSES, GET_BOSS, UPDATE_BOSS, DELETE_BOSS } from '../constants';
-
+import bossService from '../services/bossService'
+/*
 export const createBoss = newBoss => {
   console.log(newBoss);
   return {
@@ -31,7 +32,7 @@ export const GET_BOSS = boss => {
     payload: boss
   };
 };
-
+/*
 export const GET_BOSSES = bosses => {
   console.log(bosses);
   return {
@@ -40,3 +41,21 @@ export const GET_BOSSES = bosses => {
   };
 };
 
+const getAll
+*/
+
+export const getAllBosses = () => {
+  return dispatch => {
+    return bossService.getAllBosses().then(d => {
+      dispatch(getAllBossesSuccess(d));
+    });
+  };
+};
+
+
+const getAllBossesSuccess = boss => {
+  return {
+    type: GET_BOSSES,
+    payload: boss
+  };
+};

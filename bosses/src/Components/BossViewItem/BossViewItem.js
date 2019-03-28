@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { getAllBosses } from '../../actions/bossActions.js';
 
 
 const BossViewItem = (props) => {
+	const {id, name, description, img} = props;
 	return (
         <li className="card border-dark mb-3">
     		<div className="card-header">{props.bossItem.img}</div>
@@ -25,7 +27,7 @@ BossViewItem.propTypes = {
 };
 
 BossViewItem.defaultProps = {
-	newsItem: {
+	bossItem: {
 		id: 1,
 		name: 'No boss',
 		description: 'I am mafakka',

@@ -5,11 +5,15 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import NavigationBar from './Components/NavigationBar/NavigationBar';
 import Home from './Components/Home/Home';
 import Bosses from './Components/Bosses/Bosses';
+import thunk from 'redux-thunk';
+import reducers from './reducers';
+import { getAllBossess } from './actions/bossActions';
 
 import { ThemeProvider } from './context/ThemeContext';
 
 class App extends Component {
 
+  
   constructor(props) {
     super(props);
     this.state = {
